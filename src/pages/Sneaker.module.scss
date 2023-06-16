@@ -1,0 +1,92 @@
+.row {
+    height: 100%;
+    margin: auto;
+}
+
+.left-heading {
+    font-weight: 700;
+    color: #273342;
+    font-size: 1.95rem;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+.left-paragraph {
+    color: gray;
+    padding-left: 10px;
+    margin-top: 20px;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.sneakerimg{
+    width: -webkit-fill-available;
+}
+
+.left-column {
+    background-color: #fff;
+    float: left;
+    width: 50%;
+    padding: 25px;
+    align-items: center;
+    vertical-align: center;
+    height: 100%;
+    /* Should be removed. Only for demonstration */
+    padding-top: 15%;
+}
+
+/* Create two equal columns that floats next to each other */
+.right-column {
+    // background-image: url('https://images.unsplash.com/photo-1520333789090-1afc82db536a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80');
+    object-fit: cover;
+    background-position: 50% 50%;
+    float: left;
+    width: 50%;
+    padding: 10px;
+    align-items: center;
+    vertical-align: center;
+    height: 100%;
+    /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.btn {
+    width: 200px;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    font-size: 19px;
+    font-weight: 500;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 10px;
+    border-radius: 0.375rem;
+    border: none;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .left-column {
+        width: 100%;
+        height: auto;
+    }
+
+    .right-column {
+        width: 97%;
+        margin: 0 20px 0 10px;
+        border-radius: 20px;
+    }
+
+
+}
+
+.itemDescription{
+    font-size: 18px;
+    margin-bottom: 20px;
+}

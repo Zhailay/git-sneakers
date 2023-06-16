@@ -18,7 +18,12 @@
 
   &__selector {
     display: flex;
+<<<<<<< HEAD
     background-color: #d8d8d8;
+=======
+    background-color: #f3f3f3;
+    border-radius: 10px;
+>>>>>>> 64891dd (Add Sneaker page)
     flex-direction: column;
     padding: 6px;
 
@@ -43,7 +48,15 @@
           border-radius: 5px;
           cursor: auto;
         }
+<<<<<<< HEAD
       }
+=======
+        &:hover{
+          background: #ffffff;
+        }
+      }
+
+>>>>>>> 64891dd (Add Sneaker page)
     }
   }
 
