@@ -18,7 +18,8 @@
 
   &__selector {
     display: flex;
-    background-color: #d8d8d8;
+    background-color: #f3f3f3;
+    border-radius: 10px;
     flex-direction: column;
     padding: 6px;
 
@@ -43,7 +44,11 @@
           border-radius: 5px;
           cursor: auto;
         }
+        &:hover{
+          background: #ffffff;
+        }
       }
+
     }
   }
 
