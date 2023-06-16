@@ -1,21 +1,5 @@
-<<<<<<< HEAD
-import { useState } from "react"
 
 const SneakerBlock = ({title,imageUrl,price,sizes,types}) => {
-    const [sneakerCount,setsneakerCount] = useState(0)
-    const [activeSize,setActiveSize] = useState(0)
-
-    const onClickAddButton = () => {
-        setsneakerCount(sneakerCount+1)
-    }
-    const onClicksneakerSize = (index) => {
-        setActiveSize(index)
-    }
-    // console.log(sneaker)
-=======
-
-const SneakerBlock = ({title,imageUrl,price,sizes,types}) => {
->>>>>>> 64891dd (Add Sneaker page)
     return (
         <div className="sneaker-block">
             <img
@@ -27,21 +11,13 @@ const SneakerBlock = ({title,imageUrl,price,sizes,types}) => {
             <div className="sneaker-block__selector">
                 <ul>
                     {sizes.map((size,i) =>
-<<<<<<< HEAD
-                        <li key={i} className={activeSize === i ? "active":""} onClick={()=>onClicksneakerSize(i)}>{size}</li>
-=======
                         <li key={i}>{size}</li>
->>>>>>> 64891dd (Add Sneaker page)
                     )}
                 </ul>
             </div>
             <div className="sneaker-block__bottom">
                 <div className="sneaker-block__price">from {price} $</div>
-<<<<<<< HEAD
-                <button className="button button--outline button--add" onClick={onClickAddButton}>
-=======
                 <button className="button button--outline button--add">
->>>>>>> 64891dd (Add Sneaker page)
                     <svg
                         width="12"
                         height="12"
@@ -54,12 +30,7 @@ const SneakerBlock = ({title,imageUrl,price,sizes,types}) => {
                             fill="white"
                         />
                     </svg>
-<<<<<<< HEAD
-                    <span>Add</span>
-                    <i>{sneakerCount}</i>
-=======
                     <span>View</span>
->>>>>>> 64891dd (Add Sneaker page)
                 </button>
             </div>
         </div>
